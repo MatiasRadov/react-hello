@@ -1,5 +1,7 @@
 import React from "react";
 
-const Form = () => {};
+const Form = () => {
+	return null;
+};
 
 export default Form;

@@ -9,7 +9,7 @@ const Home = () => {
 	return (
 		<div>
 			<Navbar />
-			<div>
+			<div className="mx-3">
 				<Jumbotron />
 				<Cards />
 				<Form />
