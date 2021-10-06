@@ -1,13 +1,12 @@
 @import "~bootstrap/scss/bootstrap.scss";
 
-/* 
+body {
+    width: 360px;
+}
 
-    You can write your own styles here...
+@media only screen and (min-width: 600px) {
+    body {
+        width: 1440px;
+    }
     
-    
-    ...Or you can use the import command to include 
-    other sylesheets into your bunde as well, e.j:
-    
-    import 'relative/path/to/stylesheet.scss';
-
-*/
+  }
