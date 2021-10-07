@@ -1,42 +1,37 @@
 import React from "react";
 
-const Form = props => {
+const Form = () => {
 	return (
-		<div className="mx-4">
-			<form className="bg-light my-4 py-3 col-12 border border-3 rounded">
-				<div className="col-6">
-					<div className="mb-3 mx-3">
-						<label for="widthInput" className="form-label">
-							X Value
-						</label>
-						<input
-							type="number"
-							className="form-control"
-							id="widthInput"
-							value={props.handleWidthChange}
-						/>
-					</div>
-					<div className="mb-3 mx-3">
-						<label for="heightInput" className="form-label">
-							Y Value
-						</label>
-						<input
-							type="number"
-							className="form-control"
-							id="heightInput"
-							value={props.handleWidthChange}
-						/>
-					</div>
-
-					<button type="submit" className="btn btn-primary mx-3">
-						Submit
-					</button>
+		<div className="mx-3 px-3 container-fluid ">
+			<form className="float-center form-div">
+				<div className="mb-3">
+					<div className="form-label">Email address</div>
+					<input
+						type="email"
+						className="form-control"
+						id="exampleInputEmail1"
+						aria-describedby="emailHelp"
+					/>
 				</div>
-				<div className="col-6 d-flex justify-content-center align-items-center">
-					<div
-						style={{ width: props.width, height: props.height }}
-						className="border border-2 bg-danger"></div>
+				<div className="mb-3">
+					<div className="form-label">Password</div>
+					<input
+						type="password"
+						className="form-control"
+						id="exampleInputPassword1"
+					/>
 				</div>
+				<div className="mb-3 form-check">
+					<input
+						type="checkbox"
+						className="form-check-input"
+						id="exampleCheck1"
+					/>
+					<div className="form-check-label">Check me out</div>
+				</div>
+				<button type="submit" className="btn btn-primary">
+					Submit
+				</button>
 			</form>
 		</div>
 	);

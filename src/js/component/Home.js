@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 import Navbar from "./Navbar";
 import Jumbotron from "./Jumbotron";
 import Cards from "./Cards";
@@ -6,29 +6,17 @@ import Form from "./Form";
 import Footer from "./Footer";
 
 const Home = () => {
-	const [width, setWidth] = useState(50);
-	const [height, setHeight] = useState(50);
-
-	const handleWidthChange = event => {
-		setWidth(event.target.value);
-	};
-
-	const handleHeightChange = event => {
-		setHeight(event.target.value);
-	};
-
 	return (
 		<div>
 			<Navbar />
-			<div className="mx-3 px-3 col-md-12 ">
-				<Jumbotron />
-				<Cards />
-				<Form
-					width={width}
-					height={height}
-					handleWidthChange={() => handleWidthChange}
-					handleHeightChange={() => handleHeightChange}
-				/>
+			<div className="row mt-5 py-4">
+				<div className="col-1"></div>
+				<div className="d-flex flex-column justify-content-center align-item-center col-10">
+					<Jumbotron />
+					<Cards />
+					<Form />
+				</div>
+				<div className="col-1"></div>
 			</div>
 			<Footer />
 		</div>
