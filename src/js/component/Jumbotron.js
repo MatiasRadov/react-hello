@@ -2,13 +2,17 @@ import React from "react";
 
 const Jumbotron = () => {
 	return (
-		<div className="jumbotron jumbotron-fluid mt-5 pt-3">
+		<div className="jumbotron jumbotron-fluid mb-4 p-5 bg-light border rounded-3">
 			<div className="container">
-				<h1 className="display-4 text-center">A Warm Welcome</h1>
+				<h1 className="display-4 text-start bold">A Warm Welcome!</h1>
 				<p className="lead text-center">
-					This is a modified jumbotron that occupies the entire
-					horizontal space of its parent.
+					Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+					Integer faucibus felis vitae elit ultricies, vel tempus
+					metus dapibus.
 				</p>
+				<a href="#" className="btn btn-primary">
+					Call to action!
+				</a>
 			</div>
 		</div>
 	);

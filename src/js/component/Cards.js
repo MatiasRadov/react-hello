@@ -2,7 +2,7 @@ import React from "react";
 
 const Cards = () => {
 	return (
-		<div className="card-div mx-auto px-3">
+		<div className="card-div mx-auto px-3 justify-content-left">
 			<div className="card" style={{ width: "14rem" }}>
 				<img
 					src="https://lh3.googleusercontent.com/UU_mp8Eg6_E4RQ-6fIVUfwW8efzZcx5U7ZfHWlkTFh6HDN3Xqph7EJBJ4bXW7ZpgWI2Tng=s129"
