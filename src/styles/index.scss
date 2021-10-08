@@ -1,13 +1,52 @@
 @import "~bootstrap/scss/bootstrap.scss";
 
-/* 
+html {
+    max-width: 100%;
+    overflow-x: hidden;
+}
 
-    You can write your own styles here...
-    
-    
-    ...Or you can use the import command to include 
-    other sylesheets into your bunde as well, e.j:
-    
-    import 'relative/path/to/stylesheet.scss';
+body {
+    width: 360px;
+    max-width: 100%;
+    overflow-x: hidden;
+}
 
-*/
+
+.card-div {
+    display: flex !important;
+    flex-direction: column !important;
+    position: relative !important;
+    left: 50% !important;
+    margin-left: -7rem !important;
+
+    
+}
+
+.card {
+    margin-top: 20px;
+    margin-bottom: 20px;    
+}
+
+
+
+@media only screen and (min-width: 600px) {
+    body {
+        width: 1440px;
+    }
+    .card-div {
+        flex-direction: row !important;
+        margin-left: 0px !important;
+        left: 5% !important;
+        
+    }
+    .card {
+        margin-left: 20px;
+        margin-right: 20px;    
+    }
+
+    .form-div {
+        width: 40% !important;
+        position: relative !important;
+        left: 28% !important;
+    }
+  }
