@@ -2,7 +2,7 @@ import React from "react";
 
 const Form = () => {
 	return (
-		<div className="mx-3 px-3 container-fluid ">
+		<div className="mx-3 px-3 container-fluid justify-content-center align-items-center ">
 			<form className="float-center form-div">
 				<div className="mb-3">
 					<div className="form-label">Email address</div>

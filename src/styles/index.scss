@@ -15,18 +15,12 @@ body {
     display: flex !important;
     flex-direction: column !important;
     position: relative !important;
-    left: 50% !important;
-    margin-left: -7rem !important;
-
-    
 }
 
 .card {
     margin-top: 20px;
     margin-bottom: 20px;    
 }
-
-
 
 @media only screen and (min-width: 600px) {
     body {
